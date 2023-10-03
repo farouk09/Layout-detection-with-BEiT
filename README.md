@@ -10,6 +10,9 @@ Welcome to the CV Parsing project! This project focuses on Computer Vision (CV) 
 2. **Neck**: Our model incorporates a Feature Pyramid Network (FPN) for improved feature extraction.
 3. **Head**: We use Faster R-CNN for object detection and recognition.
 
+![Alt text](<layout detection/work_dirs/results/cprt.png>)
+
+
 ## Model Pretraining
 
 To achieve accurate layout detection, our backbone (BEIT) is pretrained on a self-supervised task based on masked image modeling. For detailed information on the pretraining process, please refer to the [pretraining readme](link-to-pretraining-readme).
@@ -21,7 +24,7 @@ Before you start working with this project, ensure you have the following prereq
 - **MMdetection 3.1.0**: Make sure you have MMdetection version 3.1.0 installed.
 - **BEIT Backbone Integration**: Move the file `layout detection/backbone/beit.py` to `mmdetection/mmdet/models/backbones` within your MMdetection installation. Additionally, import BEIT in `mmdetection/mmdet/models/backbones/__init__.py`.
 
-The CV dataset used in this project is stored on SharePoint. To access it, you'll need to insert the dataset path into `layout detection/configs/_base_/datasets/CV_dataset.py`.
+
 
 ## Fine-Tuning
 
@@ -38,6 +41,13 @@ To test the model, you can use the following command:
 ```
 python tools/test.py <config> <checkpoint> --show-dir <directory_results>
 ```
+
+## Results
+
+Here are some results on PublayNet : 
+
+![Alt text](<layout detection/work_dirs/results/PMC3576793_00004.jpg>) ![Alt text](<layout detection/work_dirs/results/PMC3654277_00006.jpg>) ![Alt text](<layout detection/work_dirs/results/PMC3777717_00006.jpg>)
+
 
 ## User Interface
 
