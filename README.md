@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to the CV Parsing project! This project focuses on Computer Vision (CV) parsing and leverages the BEIT model for layout detection. The model consists of three key components:
+Welcome to the CV Parsing project! This project focuses on CV parsing and leverages the BEIT model for layout detection. The model consists of three key components:
 
 1. **Backbone**: We employ BEIT (BERT for Image Transformers) as the backbone for pretraining image transformers.
 2. **Neck**: Our model incorporates a Feature Pyramid Network (FPN) for improved feature extraction.
